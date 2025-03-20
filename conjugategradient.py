@@ -2,7 +2,7 @@ import numpy as np
 
 # Initialize variables
 x0_start = 2
-iterations = 100
+iterations =50
 step_size = 0.01
 
 x = x0_start
@@ -23,7 +23,7 @@ for i in range(iterations):
     r_new = 2*x + 2
     
     # Update direction (d)
-    beta = np.dot(r_new, r_new) / np.dot(r, r)
+    beta = (np.dot(r_new, r_new) / np.dot(r, r))
     d = -r_new + beta * d
     
     r = r_new  # Update residual
