@@ -3,7 +3,7 @@ import sympy
 
 
 x0_start = 2
-iteration = 100
+iteration = 200
 step_size = 0.01
 
 x = x0_start
